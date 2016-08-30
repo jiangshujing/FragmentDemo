@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FragmentViewPagerDemo</string>
+
+    <string-array name="street_tab_title">
+        <item>fragmentA</item>
+        <item>fragmentB</item>
+        <item>fragmentC</item>
+    </string-array>
+
+</resources>
