@@ -1,0 +1,2 @@
+# FragmentDemo
+通过不同方式进行Fragment的切换，测试生命周期的不同调用情况
