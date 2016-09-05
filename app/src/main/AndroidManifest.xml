@@ -18,6 +18,7 @@
         <activity android:name=".activity.FragmentViewPagerActivity"/>
         <activity android:name=".activity.AddHideFragmentActivity"/>
         <activity android:name=".activity.ReplaceFragmentActivity"/>
+        <activity android:name=".activity.FragmentNestFragmentActivity"/>
     </application>
 
 </manifest>

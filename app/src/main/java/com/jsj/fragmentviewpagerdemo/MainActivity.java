@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jsj.fragmentviewpagerdemo.activity.AddHideFragmentActivity;
+import com.jsj.fragmentviewpagerdemo.activity.FragmentNestFragmentActivity;
 import com.jsj.fragmentviewpagerdemo.activity.FragmentViewPagerActivity;
 import com.jsj.fragmentviewpagerdemo.activity.ReplaceFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button bt_fragment_viewpager, bt_fragment_add_hide,bt_fragment_replace;
+    private Button bt_fragment_viewpager, bt_fragment_add_hide,bt_fragment_replace,bt_fragment_nest_fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_fragment_viewpager = (Button) findViewById(R.id.bt_fragment_viewpager);
         bt_fragment_add_hide = (Button) findViewById(R.id.bt_fragment_add_hide);
         bt_fragment_replace = (Button) findViewById(R.id.bt_fragment_replace);
+        bt_fragment_nest_fragment = (Button) findViewById(R.id.bt_fragment_nest_fragment);
 
         bt_fragment_viewpager.setOnClickListener(this);
         bt_fragment_add_hide.setOnClickListener(this);
         bt_fragment_replace.setOnClickListener(this);
+        bt_fragment_nest_fragment.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_fragment_replace://使用Replace来切换Fragment
                 startActivity(new Intent(this,ReplaceFragmentActivity.class));
+                break;
+            case R.id.bt_fragment_nest_fragment://frament 嵌套 fragment
+                startActivity(new Intent(this,FragmentNestFragmentActivity.class));
                 break;
         }
     }

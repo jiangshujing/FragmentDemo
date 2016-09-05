@@ -27,4 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="使用replace切换fragment" />
+
+    <Button
+        android:id="@+id/bt_fragment_nest_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="fragment 嵌套 fragment" />
 </LinearLayout>
